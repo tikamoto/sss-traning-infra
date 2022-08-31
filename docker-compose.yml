@@ -39,6 +39,5 @@ services:
       - MYSQL_PASSWORD=${MYSQL_PASSWORD}
   adminer:
     image: adminer
-    restart: always
     environment:
       - VIRTUAL_HOST=adminer.localhost
