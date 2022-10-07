@@ -11,9 +11,7 @@ services:
     build: ./infra/php
     volumes:
       - ./infra/php/php.ini:/usr/local/etc/php/php.ini
-      - ./app/src:/var/www/src
-      - ./app/vendor:/var/www/vendor
-      - ./app/web:/var/www/html
+      - ./app:/var/www/app
     environment:
       - VIRTUAL_HOST=web.localhost
       - DB_HOST=mysql
