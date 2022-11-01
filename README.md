@@ -6,6 +6,23 @@ PHPのプログラミング演習のためのDocker環境です。
 - PHP：8.1系
 - MySQL：8.0系
 
+#### ディレクトリ構成
+```
+├ app
+│  ├ src … アプリケーションのソースコード置き場
+│  ├ vendor … composer installのインストール先
+│  └ web … ドキュメントルート
+├ infra
+│  ├ mysql … MySQLのデータファイル（触らない）
+│  └ php
+│     └ php.ini … PHPの設定ファイル
+├ mock … ToDoアプリケーションのデザインモック
+├ .env.sample … 環境変数ファイルのサンプル
+├ composer.json … PHPのライブラリ依存関係ファイル
+├ docker-compose.yml … Docker Composeの定義ファイル
+└ Procfile … Herokuの設定ファイル
+```
+
 # 演習内容
 
 演習としてToDoアプリケーションを一から構築してもらいます。
